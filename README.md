@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://jan-dev0.github.io/social-link-profile)
+- [Solution URL](https://jan-dev0.github.io/social-link-profile)
 
 ## My process
 
