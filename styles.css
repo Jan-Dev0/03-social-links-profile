@@ -1,0 +1,140 @@
+/* General reset */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS variables for theme colors */
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+/* Global styles */
+html {
+  font-size: 62.5%; /* 1rem = 10px, makes rem calculations easier */
+}
+
+body {
+  background-color: var(--grey-900);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem; /* Base font size for the body */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container for the profile card */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile card styles */
+.profile {
+  width: 327px;
+  padding: 2.4rem;
+  background: var(--grey-800);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+/* Header section of the profile */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Profile image styling */
+.profile-image {
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
+}
+
+.profile-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.profile-location {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--green);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.profile-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Navigation links */
+.profile-links {
+  width: 100%;
+}
+
+.profile-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-links li {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.7rem;
+}
+
+.profile-links li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 600;
+  background: var(--grey-700);
+  width: 100%;
+  padding: 1.4rem;
+  display: inline-block;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile-links li a:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
+
+.profile-links li:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Responsive styles */
+@media (min-width: 780px) {
+  .profile {
+    width: 384px;
+    padding: 4rem;
+  }
+}
