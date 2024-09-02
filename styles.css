@@ -18,14 +18,14 @@
 
 /* Global styles */
 html {
-  font-size: 62.5%; /* 1rem = 10px, makes rem calculations easier */
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
 body {
   background-color: var(--grey-900);
   color: var(--white);
   font-family: "Inter", sans-serif;
-  font-size: 1.6rem; /* Base font size for the body */
+  font-size: 1.6rem; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -91,11 +91,7 @@ body {
 }
 
 /* Navigation links */
-.profile-links {
-  width: 100%;
-}
-
-.profile-links ul {
+cooking: 5 minutes .profile-links ul {
   list-style: none;
   display: flex;
   flex-direction: column;
